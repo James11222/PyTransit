@@ -4,6 +4,12 @@ This is a simple educational demo for exoplanet transits. I include both an inte
 
 To use this code first clone the repository. After the repository is on your local machine, you can either open the jupyter notebook located in the `notebooks` directory or run the python script in the `scripts` folder. All outputs will be saved to the `outputs` directory.
 
+Before using the code, make sure to install all the required packages via the command
+
+```
+pip install -r requirements.txt
+```
+
 ### Script Use
 
 To use the python script, run the following code in your terminal
