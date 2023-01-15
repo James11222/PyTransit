@@ -24,5 +24,5 @@ We include optional parameters to change the output animation. The optional argu
 A typical output of this code looks like
 
 <p align="center">
-    <img src="outputs/exoplanet.gif" width="50%">
+    <img src="outputs/exoplanet.gif" width="80%">
 </p>
