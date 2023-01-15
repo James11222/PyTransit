@@ -17,7 +17,12 @@ We include optional parameters to change the output animation. The optional argu
 * `planet_radius` - [Float] - The radius of your planet. Default value is 0.3
 * `star_radius` - [Float] - The radius of your star. Default value is 5.0
 * `camera_distance` - [Float] - The distance the camera is away from the system. Default value is 8.0
-* `dark_mode` - [Bool] - The default background mode of the animation. Default value is True
+
+including the parameters in your command line would look like
+
+```
+python run_transit.py -num_frames 200 -planet_radius 0.3 -star_radius 5.0 -camera_distance 8.0
+```
 
 ### Output
 
