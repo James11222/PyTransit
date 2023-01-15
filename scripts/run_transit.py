@@ -23,9 +23,6 @@ parser.add_argument('-star_radius', type=float,
 parser.add_argument('-camera_distance', type=float, 
                     help="""The distance the camera is away from the system. Default value is 8.0""")
 
-parser.add_argument('-dark_mode', type=bool, 
-                    help="""The default background mode of the animation. Default value is True""")
-
    
 
 results = parser.parse_args()
@@ -54,12 +51,6 @@ if results.camera_distance:
 else:
     results.camera_distance=8.0
     print('Camera Distance = {0}'.format(results.camera_distance))
-    
-if results.dark_mode:
-    print('Dark Mode = {0}'.format(results.dark_mode))
-else:
-    results.dark_mode=True
-    print('Dark Mode = {0}'.format(results.dark_mode))
     
 
 class Body:
@@ -212,7 +203,7 @@ def main():
     animation = camera.animate(blit=True)
 
     #save animation
-    animation.save('outputs/exoplanet.gif', fps=30)
+    animation.save('../outputs/exoplanet.gif', fps=30)
     
 
 if __name__ == "__main__":
@@ -220,5 +211,5 @@ if __name__ == "__main__":
     Star_Radius = results.star_radius
     Planet_Radius = results.planet_radius
     Camera_Distance = results.camera_distance
-    Dark_Mode = results.dark_mode
+    Dark_Mode = True
     main()
